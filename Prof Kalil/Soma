@@ -1,0 +1,18 @@
+package br.senac.tarefas;
+
+public class tarefa03Soma {
+
+	public static void main(String[] args) {
+		
+		double n1 = 15.5;
+		double n2 = 11.8;
+		
+		double total = n1 + n2;
+		
+		System.out.print("O Valor da Soma é " + total);
+		
+		
+
+	}
+
+}
