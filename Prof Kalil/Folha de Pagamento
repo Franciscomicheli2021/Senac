@@ -1,19 +1,15 @@
 package br.senac.tarefas;
 
-public class tarefa06G {
+public class tarefa06FolhaDePagamento {
 
 	public static void main(String[] args) {
 		
-		tarefa06FolhaDePagamento f = new tarefa06FolhaDePagamento();
+		double ganho = 25;
+		int horas = 160;
 		
-		f.setSalario(25);
-		f.setDesconto(0);
-		f.setHorasTrabalhadas(160);
+		double salario = ganho * horas;
 		
-		double salarioFinal = f.getSalario() * f.getHorasTrabalhadas() - f.getDesconto();
-		
-		System.out.printf("%.2f", salarioFinal);
-
+		System.out.printf ("O valor do Salário é de: %.2f", salario);
 	}
 
 }
