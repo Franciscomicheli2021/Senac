@@ -1,0 +1,13 @@
+package br.senac.tarefas;
+
+public class tarefa01HelloWorld {
+
+	public static void main(String[] args) {
+		
+		String texto = "Hello World";
+		
+		System.out.println(texto);
+
+	}
+
+}
