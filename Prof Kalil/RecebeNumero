@@ -1,0 +1,14 @@
+package br.senac.tarefas;
+
+public class tarefa02RecebeNumero {
+
+	public static void main(String[] args) {
+		
+		int numero = 10;
+		
+		System.out.print(numero);
+		
+
+	}
+
+}
