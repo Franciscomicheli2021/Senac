@@ -1,0 +1,21 @@
+package br.senac.tarefas;
+
+public class tarefa10FolhaPagamento {
+
+	public static void main(String[] args) {
+		double ganhoHora = 25;
+		int horasTrab = 160;
+		
+		double salBruto = ganhoHora * horasTrab;
+		double inss = salBruto * 0.08;
+		double sindicato = salBruto * 0.05;
+		double salLiq = salBruto - inss - sindicato;
+		
+		System.out.printf("O Salário Bruto é %2.f", salBruto);
+		System.out.printf("\nO valor descontado para o INSS é de %.2f", inss);
+		System.out.printf("\nO valor descontado para o Sindicato é de %.2f", sindicato);
+		System.out.printf("\nO Salário Liquido foi de: R$ %.2f", salLiq);
+
+	}
+
+}
