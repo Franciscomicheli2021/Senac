@@ -1,0 +1,14 @@
+package br.senac.tarefas;
+
+public class tarefa07GrausCelsius {
+
+	public static void main(String[] args) {
+		double farenheit = 10;
+		
+		double celsius = (5 * (farenheit -32)) / 9;
+		
+		System.out.printf("O valor da temperatura em Celcius é: %.2f", celsius);
+
+	}
+
+}
