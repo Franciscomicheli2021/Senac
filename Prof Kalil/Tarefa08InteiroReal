@@ -1,0 +1,20 @@
+package br.senac.tarefas;
+
+public class tarefa08InteiroReal {
+
+	public static void main(String[] args) {
+		int n1 = 7;
+		int n2 = 9;
+		double n3 = 4.5;
+		
+		double produto = 2 * n1 * n2 / 2;
+		double soma = n1 * 3 + n3;
+		double cubo = n3 * n3 * n3;
+		
+		System.out.printf("O produto do dobro do primeiro com a metade do segundo é: "+ produto);
+		System.out.printf("\nA soma do Triplo do primeiro mais o Segundo é: " + soma);
+		System.out.printf("\nO terceiro elevado ao cubo é:" + cubo);
+
+	}
+
+}
