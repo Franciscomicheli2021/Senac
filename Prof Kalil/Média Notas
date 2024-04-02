@@ -1,0 +1,17 @@
+package br.senac.tarefas;
+
+public class tarefa04Media {
+
+	public static void main(String[] args) {
+		double n1 = 9;
+		double n2 = 9.5;
+		double n3 = 8;
+		double n4 = 5;
+		
+		double media = (n1 + n2 + n3 + n4) / 4;
+		
+		System.out.print("A média das notas é: " + media);
+
+	}
+
+}
