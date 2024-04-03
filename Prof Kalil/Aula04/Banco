@@ -1,0 +1,16 @@
+package br.senac.aula04.banco;
+
+public class Banco {
+
+	public static void main(String[] args) {
+		double ve = 1500;
+		int t = 10;
+		
+		double tx = ve * 0.02;
+		double vf = (ve * 1+tx) / t;
+		
+		System.out.println("O valor da parcela é de: " + vf);
+		
+	}
+
+}
