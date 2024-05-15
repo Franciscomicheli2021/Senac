@@ -1,1 +1,66 @@
+package com.senac.elevador;
+
+import java.awt.Component;
+import java.awt.Font;
+
+import javax.swing.*;
+
+public class Janela extends JFrame {
+
+	private JButton btnAbrir, btnFechar;
+	private JButton[] btnAndar;
+	private JLabel lblInicio;
+
+	public Janela() {
+		inicio();
+
+	}
+
+	private void inicio() {
+		setTitle("Bem vindo ao Elevador KXPO");
+		setSize(800, 600);
+		setDefaultCloseOperation(EXIT_ON_CLOSE); //ativa o x para fechar a janela
+		setLocationRelativeTo(null);
+		setResizable(false);
+		setLayout(null);
+		criarPainel();
+		setVisible(true);
+	}
+
+	private void criarPainel() {
+		add(criarLabel());  //ok
+		criarBtnAbrirFechar();  //ok
+		criarBtnAndares();
+		
+	}
+
+	private void criarBtnAndares() {
+		btnAndar = new JButton[5];
+		int x = 45;
+		for(int i=0; i<btnAndar.length; i++) {
+			btnAndar[i] = new JButton(""+(i+1));
+			btnAndar[i].setBounds(x, 350, 100, 60);
+			x += 145;
+			add(btnAndar[i]);
+		}
+	}
+
+	private void criarBtnAbrirFechar() {
+		btnAbrir = new JButton("Abrir");
+		btnFechar = new JButton("Fechar");
+		btnAbrir.setBounds(160, 225, 220, 60);
+		btnFechar.setBounds(400, 225, 220, 60);
+		add(btnAbrir);
+		add(btnFechar);
+	}
+
+	private Component criarLabel() {
+		lblInicio = new JLabel("Elevador KXPO : Escolha um Andar.");
+		lblInicio.setFont(new Font("Arial", Font.PLAIN, 38));
+		lblInicio.setHorizontalAlignment(JLabel.CENTER);
+		//lblInicio.setVerticalAlignment(JLabel.TOP);
+		lblInicio.setBounds(0, 60, 800, 30);
+		return lblInicio;
+	}
+}
 
